@@ -60,37 +60,44 @@ pip install -r requirements.txt
 ```
 4️⃣ Run Backend API Servers
 Start the FastAPI backend:
-
+```
 cd inventory
 py main.py --port 8001
+```
 
 In a new terminal, start the Payment Service FastAPI backend:
+```
 cd ../payment
 py main.py --port 8002
-
-You should see both API servers running at:
-Inventory API: http://localhost:8001
+```
+You should see both API servers running at:<br>
+Inventory API: http://localhost:8001<br>
 Payment API: http://localhost:8002
 
 5️⃣Start Background Consumers
 Open new terminal windows/tabs and run the consumers for each service:
 
 Inventory Consumer:
+```
 python inventory/inventory_consumer.py
-
+```
 Payment Consumer:
+```
 python payment/payment_consumer.py
-
+```
 These consumers listen for order events and handle inventory and payment processing asynchronously.
 
 6️⃣ Frontend Setup (React)
 Navigate to the frontend directory:
+```
 cd ../frontend
+```
 Install dependencies:
-
+```
 npm install
-
+```
 Start the development server:
+```
 npm run dev
-
+```
 This will launch the frontend app, usually accessible at http://localhost:5173
