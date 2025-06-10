@@ -44,11 +44,13 @@ This is a **real-time, event-driven payment system** built with **FastAPI**, **R
 ```bash
 git clone https://github.com/ishanshah001/Fastapi-microservices
 cd /backend
-
+```
 2️⃣ Setup Environment Variables
 Create a .env file in the backend directory with your Redis connection details:
+```bash
 REDDIS_ENDPOINT=localhost
 REDDIS_PASSWORD=yourpassword
+```
 Replace localhost and yourpassword with your Redis server address and password.
 
 3️⃣ Install Backend Dependencies
