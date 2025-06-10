@@ -41,22 +41,23 @@ This is a **real-time, event-driven payment system** built with **FastAPI**, **R
 ### 🐍 Backend (FastAPI + Redis)
 
 1️⃣ Clone the repository & navigate to backend:
-
+```
 git clone https://github.com/ishanshah001/Fastapi-microservices
 cd /backend
-
+```
 2️⃣ Setup Environment Variables
 Create a .env file in the backend directory with your Redis connection details:
-
+```
 REDDIS_ENDPOINT=localhost
 REDDIS_PASSWORD=yourpassword
-
+```
 Replace localhost and yourpassword with your Redis server address and password.
 
 3️⃣ Install Backend Dependencies
 Make sure you have Python 3.8+ installed. Then run:
+```
 pip install -r requirements.txt
-
+```
 4️⃣ Run Backend API Servers
 Start the FastAPI backend:
 
